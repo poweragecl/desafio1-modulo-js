@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/scripts.js" defer></script>
+    <title>Desafio 1 - Javascript</title>
+
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div class="product-card">
+
+            <ul class="product-gallery">
+                <li class="item-image active" data-attribute="black">
+                    <img src="assets/img/idea-pad-black.jpg" alt="" class="product-featured-image">
+                </li>
+                <li class="item-image" data-attribute="white">
+                    <img src="assets/img/idea-pad-white.jpg" alt="" class="product-featured-image">
+                </li>
+            </ul>
+            <h3 class="product-title">Lenovo Gaming Laptop</h3>
+            <div class="quantity-color-container">
+                <input type="number" class="select-quantity" min="1" value="1">
+                <select name="color" id="color" class="select-color">
+    
+                    <option value="black">Negro</option>
+                    <option value="white">Blanco</option>
+                </select>
+            </div>
+    
+    
+            <div class="price-container">
+                Precio: $<span class="price">1.150.000</span>
+            </div>
+    
+            <button class="calculate">Calcular Total</button>
+    
+        </div> <!-- /card -->
+        
+        <div class="cart">
+            <h3>Tu cotización:</h3>
+            <div class="final-price">
+                Total: <span class="final-price-amount">$0</span>
+            </div> 
+            
+            <div class="final-quantity">
+                Cantidad: <span class="final-quantity-amount">0</span>
+            </div>
+    
+            <div class="final-color">
+                Color: <span class="final-selected-color"></span>
+                <div class="color-swatch" style="background-color: transparent">
+
+                </div>
+            </div>
+    
+        </div>
+
+    </div> <!-- .wrapper -->
+    
+</body>
+</html>
